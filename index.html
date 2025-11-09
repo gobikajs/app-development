@@ -495,7 +495,7 @@ export default function App() {
 
   const getWeather = async () => {
     try {
-      const apiKey = "YOUR_API_KEY"; // Replace with your OpenWeatherMap API key
+      const apiKey = "2b1822fb9e0e84d89139b21807c3dcf2"; // Replace with your OpenWeatherMap API key
       const res = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&units=metric&appid=${apiKey}`
       );

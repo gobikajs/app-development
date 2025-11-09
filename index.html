@@ -164,7 +164,7 @@ export default function App() {
 
   return (
     &lt;View style={styles.container}&gt;
-      &lt;Text style={styles.title}&gt;🌡️ Temperature Converter&lt;/Text&gt;
+      &lt;Text style={styles.title}&gt; Temperature Converter&lt;/Text&gt;
       &lt;TextInput
         style={styles.input}
         placeholder="Enter temperature"
@@ -401,7 +401,7 @@ export default function App() {
 
   return (
     &lt;View style={styles.container}&gt;
-      &lt;Text style={styles.title}&gt;📝 Note Taking App&lt;/Text&gt;
+      &lt;Text style={styles.title}&gt; Note Taking App&lt;/Text&gt;
 
       &lt;TextInput
         style={styles.input}
@@ -453,7 +453,7 @@ export default function App() {
 
   return (
     &lt;View style={styles.container}&gt;
-      &lt;Text style={styles.title}&gt;📸 My Gallery&lt;/Text&gt;
+      &lt;Text style={styles.title}&gt; My Gallery&lt;/Text&gt;
 
       &lt;FlatList
         data={images}
@@ -516,7 +516,7 @@ export default function App() {
 
   return (
     &lt;View style={styles.container}&gt;
-      &lt;Text style={styles.title}&gt;🌤️ Weather App&lt;/Text&gt;
+      &lt;Text style={styles.title}&gt; Weather App&lt;/Text&gt;
       &lt;TextInput
         style={styles.input}
         placeholder="Enter city name"
@@ -530,9 +530,9 @@ export default function App() {
       {weather &amp;&amp; weather.main &amp;&amp; (
         &lt;View style={styles.result}&gt;
           &lt;Text style={styles.city}&gt;{weather.name}&lt;/Text&gt;
-          &lt;Text&gt;🌡️ {weather.main.temp}°C&lt;/Text&gt;
-          &lt;Text&gt;☁️ {weather.weather[0].description}&lt;/Text&gt;
-          &lt;Text&gt;💨 Wind: {weather.wind.speed} m/s&lt;/Text&gt;
+          &lt;Text&gt; {weather.main.temp}°C&lt;/Text&gt;
+          &lt;Text&gt; {weather.weather[0].description}&lt;/Text&gt;
+          &lt;Text&gt; Wind: {weather.wind.speed} m/s&lt;/Text&gt;
         &lt;/View&gt;
       )}
     &lt;/View&gt;
@@ -583,16 +583,16 @@ const styles = StyleSheet.create({
 
       if (!user || !pass) {
         msg.style.color = "orange";
-        msg.textContent = "⚠️ Please enter username and password!";
+        msg.textContent = " Please enter username and password!";
         return;
       }
 
       if (user === "admin" &amp;&amp; pass === "1234") {
         msg.style.color = "green";
-        msg.textContent = "✅ Login Successful!";
+        msg.textContent = " Login Successful!";
       } else {
         msg.style.color = "red";
-        msg.textContent = "❌ Invalid username or password!";
+        msg.textContent = " Invalid username or password!";
       }
     }
   &lt;/script&gt;
@@ -635,10 +635,10 @@ const styles = StyleSheet.create({
 
       if (!name || !email || !message) {
         msg.style.color = "red";
-        msg.textContent = "❌ Please fill all fields!";
+        msg.textContent = " Please fill all fields!";
       } else {
         msg.style.color = "green";
-        msg.textContent = `✅ Thank you, ${name}! Your message has been submitted.`;
+        msg.textContent = ` Thank you, ${name}! Your message has been submitted.`;
       }
     }
   &lt;/script&gt;
